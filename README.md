@@ -68,9 +68,12 @@ $ alloc-dealloc-test
 
 ## Testing our in-house heap allocator's alloc-dealloc speed
 ```
+# Simple Test that uses /tests/heap_allocation_simple.rs
 $ cd tests
 $ sh tests.sh
 
 X milliseconds have elapsed.
 
+# Comprehensive Test that uses /tests/heap_allocation.rs:
+# How? In tests.sh, change all occurences of heap_allocation_simple to heap_allocation, and then re-execute the above commands used in Simple Test
 ```
